@@ -1,4 +1,5 @@
 using System;
+
 using AutoMapper;
 
 using TwitterBot.Framework.Types;
