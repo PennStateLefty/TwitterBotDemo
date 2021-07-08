@@ -20,7 +20,7 @@ namespace TwitterBot.AzureFunctions
         }
 
         [Function("TweetBotFunction")]
-        public async Task Run([TimerTrigger("*/15 * * * * *")] MyInfo myTimer, FunctionContext context)
+        public async Task Run([TimerTrigger("0 */5 * * * *")] MyInfo myTimer, FunctionContext context)
         {
             var logger = context.GetLogger("TweetBotFunction");
             var tweet = await _tweetOperations.GetPopularTweetsByHashtagAsync(new Hashtag { Text = "#justsaying" });
