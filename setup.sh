@@ -5,6 +5,7 @@ azureregion="centralus"
 functionruntime="dotnet-isolated"
 functionappname="twitterbotdemo$RANDOM"
 storagename="twitterbotstorage$RANDOM"
+cosmosdbname = "twitterbotcosmos$RANDOM"
 
 #Create a simple control structure
 if [ -z $1 ]; then
@@ -19,6 +20,8 @@ else
         az storage account create --name $storagename --location $azureregion --resource-group $resourceGroupName --sku Standard_LRS
         echo "Create Function App"
         az functionapp create --resource-group $resourceGroupName --consumption-plan-location $azureregion --runtime $functionruntime --runtime-version 5.0 --functions-version 3 --name $functionappname --storage-account $storagename
+        echo "Create CosmosDB"
+        az cosmosdb create --name $cosmosdbname --resource-group $resourceGroupName --locations regionName=$azureregion isZoneRedundant=false
     elif [ $1 == "Destroy" ] || [ $1 == "destroy" ]; then
         az group delete --name $resourceGroupName 
     fi

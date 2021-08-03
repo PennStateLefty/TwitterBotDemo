@@ -3,14 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterBot.Framework", "TwitterBot.Framework\TwitterBot.Framework.csproj", "{C647017B-3FAB-4451-8DA0-1B35CC706205}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterBot.Framework", "TwitterBot.Framework\TwitterBot.Framework.csproj", "{C647017B-3FAB-4451-8DA0-1B35CC706205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterBot", "TwitterBot.AzureFunctions\TwitterBot.csproj", "{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterBot.AzureFunctions", "TwitterBot.AzureFunctions\TwitterBot.AzureFunctions.csproj", "{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingConsoleApp", "TestingConsoleApp\TestingConsoleApp.csproj", "{056B9178-4D56-4B0D-B7E4-336EFBA805FC}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -32,18 +31,6 @@ Global
 		{C647017B-3FAB-4451-8DA0-1B35CC706205}.Release|x64.Build.0 = Release|Any CPU
 		{C647017B-3FAB-4451-8DA0-1B35CC706205}.Release|x86.ActiveCfg = Release|Any CPU
 		{C647017B-3FAB-4451-8DA0-1B35CC706205}.Release|x86.Build.0 = Release|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Debug|x64.Build.0 = Debug|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Debug|x86.Build.0 = Debug|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Release|x64.ActiveCfg = Release|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Release|x64.Build.0 = Release|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Release|x86.ActiveCfg = Release|Any CPU
-		{74E1122A-AC52-4AF8-88AC-326A09ACAF4B}.Release|x86.Build.0 = Release|Any CPU
 		{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -56,5 +43,23 @@ Global
 		{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}.Release|x64.Build.0 = Release|Any CPU
 		{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}.Release|x86.ActiveCfg = Release|Any CPU
 		{BA03182F-FEC2-47D9-972F-5B3DA326F5CD}.Release|x86.Build.0 = Release|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Debug|x64.Build.0 = Debug|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Debug|x86.Build.0 = Debug|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Release|x64.ActiveCfg = Release|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Release|x64.Build.0 = Release|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Release|x86.ActiveCfg = Release|Any CPU
+		{056B9178-4D56-4B0D-B7E4-336EFBA805FC}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6558F872-B935-45E6-B940-786CFCAE6683}
 	EndGlobalSection
 EndGlobal
