@@ -25,7 +25,7 @@ namespace TwitterBot.AzureFunctions
 		}
 
         [Function("TweetSchedulerFunction")]
-        public async Task Run([TimerTrigger("0 */1 * * * *")] MyInfo myTimer, FunctionContext context)
+        public async Task Run([TimerTrigger("*/20 * * * * *")] MyInfo myTimer, FunctionContext context)
         {
             var logger = context.GetLogger("TweetSchedulerFunction");
             logger.LogInformation($"TweetSchedulerFunction started execution at: {DateTime.Now}");

@@ -32,7 +32,7 @@ namespace TwitterBot.AzureFunctions
         }
 
         [Function("TweetBotFunction")]
-        public async Task Run([TimerTrigger("20 * * * * *")] MyInfo myTimer, FunctionContext context)
+        public async Task Run([TimerTrigger("*/40 * * * * *")] MyInfo myTimer, FunctionContext context)
         {
             var logger = context.GetLogger("TweetBotFunction");
             logger.LogInformation($"Entering the TweetBotFunction to poll Twitter API at: {DateTime.Now}");
